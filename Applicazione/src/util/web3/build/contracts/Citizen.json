@@ -2227,6 +2227,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "address": "0x32147ab34A9D38F22a4637C2053117e5810fC041",
+      "updated_at": 1557995711552
+    },
     "5777": {
       "links": {},
       "events": {},
@@ -2235,7 +2241,7 @@
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.597Z",
+  "updatedAt": "2019-05-16T08:34:01.552Z",
   "devdoc": {
     "methods": {
       "getAllCitizens()": {

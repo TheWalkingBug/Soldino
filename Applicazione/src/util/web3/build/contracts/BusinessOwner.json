@@ -4558,6 +4558,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "address": "0xEF45bA666031F66D8dC11F770e989a09F530FA05",
+      "updated_at": 1557995687076
+    },
     "5777": {
       "links": {},
       "events": {},
@@ -4566,7 +4572,7 @@
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.603Z",
+  "updatedAt": "2019-05-16T08:34:01.557Z",
   "devdoc": {
     "methods": {
       "confirmBusiness(address)": {

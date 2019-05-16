@@ -15688,6 +15688,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "address": "0xf808dd9E25AE0c1E14D7B0D33E86C55CAcE558C5",
+      "updated_at": 1557995957518
+    },
     "5777": {
       "links": {},
       "events": {},
@@ -15696,7 +15702,7 @@
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:08:00.109Z",
+  "updatedAt": "2019-05-16T08:34:01.724Z",
   "devdoc": {
     "methods": {
       "getBusinessVATStatus(uint256,uint8,address)": {

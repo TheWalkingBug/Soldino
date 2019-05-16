@@ -738,7 +738,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.708Z",
+  "updatedAt": "2019-05-16T08:34:01.731Z",
   "devdoc": {
     "methods": {
       "addTransaction(uint256,address,address,bool,uint256,uint8)": {

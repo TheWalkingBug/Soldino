@@ -1427,7 +1427,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.696Z",
+  "updatedAt": "2019-05-16T08:34:02.065Z",
   "devdoc": {
     "methods": {
       "addProduct(uint256,uint256,uint8,bytes32)": {

@@ -3659,7 +3659,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.700Z",
+  "updatedAt": "2019-05-16T08:34:01.713Z",
   "devdoc": {
     "methods": {
       "confirmBusinessOwner(address)": {

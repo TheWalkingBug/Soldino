@@ -1,5 +1,5 @@
 const { Contracts, ZWeb3 } = require('zos-lib');
-const proxyAddresses = require('./proxyAddresses.development');
+const proxyAddresses = require('./proxyAddresses.ropsten');
 
 const userManagerAdd = proxyAddresses.userManagerAddress();
 const businessOwnerAdd = proxyAddresses.businessOwnerAddress();
@@ -17,7 +17,7 @@ module.exports = async function (callback) {
   ({ governmentUserAddress } = { governmentUserAddress: (await web3.eth.getAccounts())[0] });
   Contracts.setArtifactsDefaults({
     gas: 5000000,
-    gasPrice: 1,
+    gasPrice: 9,
     from: governmentUserAddress,
   });
   try {

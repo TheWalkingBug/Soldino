@@ -9467,7 +9467,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.771Z",
+  "updatedAt": "2019-05-16T08:34:01.792Z",
   "devdoc": {
     "details": "A package is composed by a set of versions, identified via semantic versioning, where each version has a contract address that refers to a reusable implementation, plus an optional content URI with metadata. Note that the semver identifier is restricted to major, minor, and patch, as prerelease tags are not supported.",
     "methods": {

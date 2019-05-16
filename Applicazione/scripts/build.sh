@@ -25,7 +25,7 @@ module.exports = async function (callback) {
   ({ governmentUserAddress } = { governmentUserAddress: (await web3.eth.getAccounts())[0] });
   Contracts.setArtifactsDefaults({
     gas: 5000000,
-    gasPrice: 1,
+    gasPrice: 9,
     from: governmentUserAddress,
   });
   try {" > ./src/util/web3/init.js

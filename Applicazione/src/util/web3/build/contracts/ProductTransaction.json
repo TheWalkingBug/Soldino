@@ -13318,6 +13318,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "address": "0x28A297dB5feaEb72Bf575F58Ad757EC12439DfB5",
+      "updated_at": 1557995868020
+    },
     "5777": {
       "links": {},
       "events": {},
@@ -13326,7 +13332,7 @@
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.624Z",
+  "updatedAt": "2019-05-16T08:34:01.571Z",
   "devdoc": {
     "methods": {
       "addTransaction(uint256[],uint256[],address,address)": {

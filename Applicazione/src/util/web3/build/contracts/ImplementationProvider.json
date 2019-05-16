@@ -280,7 +280,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.751Z",
+  "updatedAt": "2019-05-16T08:34:01.751Z",
   "devdoc": {
     "details": "Interface for providing implementation addresses for other contracts by name.",
     "methods": {

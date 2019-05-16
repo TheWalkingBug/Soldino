@@ -1,10 +1,10 @@
 
-exports.businessOwnerAddress = () => '0x4379Afa7731EDa63F8cd202E78AECfd6BdB15Aa5';
-exports.citizenAddress = () => '0xF33e8587B64D7625b05B3dE3FfFEE123846BcD72';
-exports.cubitAddress = () => '0x848F9415bA5c54280269a0B3575c03caCD2EBa1b';
-exports.governmentAddress = () => '0x4f930b459039360ca0fFE70442927Ec737B83A89';
-exports.productAddress = () => '0x3Fecc6e40592c823Ed9718c98f0a2Ac348D29077';
-exports.productTransactionAddress = () => '0xB4749cd2968DeA924b96B03ee6416AE7d7d74f24';
-exports.userManagerAddress = () => '0xB775Ba81D3fB1177e0DC9E5379DDFF68d88D3B58';
-exports.vatAddress = () => '0x8A10225A1E1EA80a156105FbD3EB70F545A9cAC3';
-exports.vatTransactionAddress = () => '0xFBe7D2Cd0A493A02Fd72e9818bd3959D1EC1F822';
+exports.businessOwnerAddress = () => '0xEF45bA666031F66D8dC11F770e989a09F530FA05';
+exports.citizenAddress = () => '0x32147ab34A9D38F22a4637C2053117e5810fC041';
+exports.cubitAddress = () => '0x2C60f64F92Ce19bD99fEe3bFb7500De1C1207Ce0';
+exports.governmentAddress = () => '0x9f9c60F8a40aC4a09f03eC5dfe02b05730f3cCD9';
+exports.productAddress = () => '0x9831CeCe75e7Ad8A31506ED91BbcAA6052ec178B';
+exports.productTransactionAddress = () => '0x28A297dB5feaEb72Bf575F58Ad757EC12439DfB5';
+exports.userManagerAddress = () => '0xe00A6e02eD58d11445352f7ef901f55971F84C78';
+exports.vatAddress = () => '0xf808dd9E25AE0c1E14D7B0D33E86C55CAcE558C5';
+exports.vatTransactionAddress = () => '0x032BD2De6cE66FC372a8e96b415Ce908a6dA99b0';

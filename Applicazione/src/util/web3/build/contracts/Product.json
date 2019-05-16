@@ -24630,6 +24630,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "address": "0x9831CeCe75e7Ad8A31506ED91BbcAA6052ec178B",
+      "updated_at": 1557995834432
+    },
     "5777": {
       "links": {},
       "events": {},
@@ -24638,7 +24644,7 @@
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.830Z",
+  "updatedAt": "2019-05-16T08:34:01.615Z",
   "devdoc": {
     "methods": {
       "addProduct(uint256,uint256,uint8,bytes32)": {

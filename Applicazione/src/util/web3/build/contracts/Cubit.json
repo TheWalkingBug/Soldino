@@ -1706,6 +1706,12 @@
     "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "links": {},
+      "events": {},
+      "address": "0x2C60f64F92Ce19bD99fEe3bFb7500De1C1207Ce0",
+      "updated_at": 1557995742068
+    },
     "5777": {
       "links": {},
       "events": {},
@@ -1714,7 +1720,7 @@
     }
   },
   "schemaVersion": "3.0.6",
-  "updatedAt": "2019-05-16T08:07:59.607Z",
+  "updatedAt": "2019-05-16T08:34:01.562Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {
