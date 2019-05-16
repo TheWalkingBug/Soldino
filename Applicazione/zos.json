@@ -1,0 +1,19 @@
+{
+  "zosversion": "2.2",
+  "name": "soldino",
+  "version": "0.1.0",
+  "contracts": {
+    "UserManager": "UserManager",
+    "BusinessOwner": "BusinessOwner",
+    "Citizen": "Citizen",
+    "Cubit": "Cubit",
+    "Government": "Government",
+    "Product": "Product",
+    "ProductTransaction": "ProductTransaction",
+    "VATTransaction": "VATTransaction",
+    "VAT": "VAT"
+  },
+  "dependencies": {
+    "openzeppelin-eth": "2.1.3"
+  }
+}

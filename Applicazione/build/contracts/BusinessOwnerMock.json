@@ -1,0 +1,607 @@
+{
+  "contractName": "BusinessOwnerMock",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_businessOwner",
+          "type": "address"
+        }
+      ],
+      "name": "isConfirmed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "login",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_businessOwner",
+          "type": "address"
+        }
+      ],
+      "name": "removeBusiness",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getAllBusinessOwners",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_userManager",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_hash",
+          "type": "bytes32"
+        },
+        {
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "registerBusinessOwner",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_businessOwner",
+          "type": "address"
+        }
+      ],
+      "name": "confirmBusiness",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_userManager",
+          "type": "address"
+        }
+      ],
+      "name": "initializeMock",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_userManager\",\"type\":\"address\"}],\"name\":\"initializeMock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_businessOwner\",\"type\":\"address\"}],\"name\":\"isConfirmed\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"login\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_businessOwner\",\"type\":\"address\"}],\"name\":\"removeBusiness\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAllBusinessOwners\",\"outputs\":[{\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_userManager\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_hash\",\"type\":\"bytes32\"},{\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"registerBusinessOwner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_businessOwner\",\"type\":\"address\"}],\"name\":\"confirmBusiness\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"confirmBusiness(address)\":{\"details\":\"Confirms the given business owner\",\"params\":{\"_businessOwner\":\"The address of the business owner to confirm\"}},\"getAllBusinessOwners()\":{\"details\":\"Returns a dynamic array containing all registered business owners' addresses\"},\"initialize(address)\":{\"details\":\"Initializes the contract saving the instances of the proxies of the contracts used by this contract\",\"params\":{\"_userManager\":\"The instance of the proxy of the UserManager contract of this project\"}},\"isConfirmed(address)\":{\"details\":\"Returns true if the given business owner is confirmed\",\"params\":{\"_businessOwner\":\"The address of the business owner to check\"}},\"login(address)\":{\"details\":\"Returns the hash of the data of a specific user\",\"params\":{\"_user\":\"The address of the business owner whose data to return\"}},\"registerBusinessOwner(bytes32,address)\":{\"details\":\"Registers the given user as a business owner\",\"params\":{\"_hash\":\"the hash of the data of the citizen present in ipfs\",\"_user\":\"the address of the business owner to be registered\"}},\"removeBusiness(address)\":{\"details\":\"Removes the given business owner\",\"params\":{\"_businessOwner\":\"The address of the business owner to remove\"}}},\"title\":\"Business Owner\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/mocks/BusinessOwnerMock.sol\":\"BusinessOwnerMock\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/BusinessOwner.sol\":{\"keccak256\":\"0xa300e47687dd569b4ba34d19032544b62c713b90c6fcaec588330a487a5432ab\",\"urls\":[\"bzzr://49eb79d5d066bc40cfb62206265c1bb037c52bf48f483a6c2bf1eadda77f0c1e\"]},\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/Citizen.sol\":{\"keccak256\":\"0xca77d06b9bedcbcced1504e5110985c2ea27ae8a92d4f279d7ba8b6253b067b2\",\"urls\":[\"bzzr://87e0a862f222c28eab281e1c7018d85c1628dfb0285e6c2f00c65fd891c3a5c9\"]},\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/Cubit.sol\":{\"keccak256\":\"0xc6723c48d23d3626c65ffd64f82ba33d78bffba02945c0d5b6f2b92a9e2d92ca\",\"urls\":[\"bzzr://54d1d38339c35945b36014ee0cdd94f984f3795e19dbb42768e3a58a36901d06\"]},\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/Government.sol\":{\"keccak256\":\"0x81739600566f16efc9ee962d14e02f0df14c39a6581c1120135abfa62e2b493b\",\"urls\":[\"bzzr://c66380f0b3bb0830560cdd3b45d6396a73aabc57a7ea76566dc114e78eea738c\"]},\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/UserManager.sol\":{\"keccak256\":\"0x95f8b1445d5a61a1f6c7f9f908d1b7063afe622501eb25848e5a37879663721f\",\"urls\":[\"bzzr://e05630f5a55d69a2a5e3e93172de90bdc6731c843245051041542e944ef64808\"]},\"/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/mocks/BusinessOwnerMock.sol\":{\"keccak256\":\"0x95f2b6e5bdc1146b5eba217512eb8666be291a8e1f4cc71343911d26f42d208c\",\"urls\":[\"bzzr://2c5420657af9e1ba1ad374c8a57ca905f53f410709ff59c1f5959bd7045dcc94\"]},\"openzeppelin-eth/contracts/access/Roles.sol\":{\"keccak256\":\"0x659ba0f9a3392cd50a8a5fafaf5dfd8c6a0878f6a4613bceff4e90dceddcd865\",\"urls\":[\"bzzr://f704341d520fbc98716541f1b3f67737f0ee6e94adf072a66acb2bd25d593c2b\"]},\"openzeppelin-eth/contracts/access/roles/MinterRole.sol\":{\"keccak256\":\"0xbc5e61664566dd0ea53e003398833e8fc5571fa36239ccfd3d42c47344047baa\",\"urls\":[\"bzzr://69bbea82cb1b1ae3cc060972a928ca764b4e16c66a13feacee3a6802c7bb61b2\"]},\"openzeppelin-eth/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x965012d27b4262d7a41f5028cbb30c51ebd9ecd4be8fb30380aaa7a3c64fbc8b\",\"urls\":[\"bzzr://41ca38f6b0fa4b77b0feec43e422cfbec48b7eb38a41edf0b85c77e8d9a296b1\"]},\"openzeppelin-eth/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0xbbb170bdde83dfefceb984332bc74a1aaaf92689180069feb7e90df07432092a\",\"urls\":[\"bzzr://5ed4efa244879243034e381eed100ee36c10201c4bdec9269b1387d2c8a90d2d\"]},\"openzeppelin-eth/contracts/token/ERC20/ERC20Mintable.sol\":{\"keccak256\":\"0x9626461d3d829a6b2f6707f7c650c6d4b696c0ef9d148d1aae8ebc575b9e0feb\",\"urls\":[\"bzzr://efa580b5f7ee79b0b18b21a5d71c884cb2e78bdee4e8e31d73c7302b88a41b51\"]},\"openzeppelin-eth/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x079c4e23ee448f529e43bfa3c4e8fb4be52cd0318ee923a276835bedf45b93d8\",\"urls\":[\"bzzr://48248e86f64407a95f241d6c5c8cfea6b4d4ebf4ebb467e5c98c8af3868fafe4\"]},\"zos-lib/contracts/Initializable.sol\":{\"keccak256\":\"0xf79d9851c085aa8412e87d7a26d3485488fe12538ecb4e317ce41fc1f2c3a16a\",\"urls\":[\"bzzr://e45c5a995f57637b2300a376647ee345cc9cb30ee1984735091fcd4b10ff3500\"]},\"zos-lib/contracts/application/App.sol\":{\"keccak256\":\"0x391e6e2e33f25ebb09cccffe71b58b162e5666a954eba2181df77605c072ee6b\",\"urls\":[\"bzzr://50e87d6dcb83dabf57f4c9e98b5c8261e99aa172f412633b009508a054ab67bd\"]},\"zos-lib/contracts/application/ImplementationProvider.sol\":{\"keccak256\":\"0x56c99da52cc93629037dd3c1c0f71e2330b2d65b6b778339404a9a93a9b06abf\",\"urls\":[\"bzzr://e233f40e00ce6288189d095b09a67097fb017a0d7effb3bad7fe711b19290bce\"]},\"zos-lib/contracts/application/Package.sol\":{\"keccak256\":\"0xe698c978cf10bafa81ad0934dfde390fc5404527336dd54cb7c15b3c09a58d17\",\"urls\":[\"bzzr://cef3b5598f222d0cf71a8135e2b84da175cba3338c74f678b5523934549f83e9\"]},\"zos-lib/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0xc9d544a3cebcfc3296f61806d553c1de1710f42fe3daf505104cc1ab2539e65e\",\"urls\":[\"bzzr://9ba4fd6b1b1b9ea45f26022b5d1e08821acf03a66701575d531010dbfd134918\"]},\"zos-lib/contracts/upgradeability/AdminUpgradeabilityProxy.sol\":{\"keccak256\":\"0xf7f07ced031558180e343e9e4e8e69c6798878af971a8de1c682c1f3e6ce76b4\",\"urls\":[\"bzzr://683a06536de334975f78f4be5e9b13ea114047b850516a6b1289df68d6b96591\"]},\"zos-lib/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol\":{\"keccak256\":\"0xa0d3cc9124f7055e1c182eed8b6921b4707ae31853c9acb02aa194522537101d\",\"urls\":[\"bzzr://cf5ae71d7efee85d639d1943c1dfd4134b8ec4901eb45648b0a2dc6f51c75206\"]},\"zos-lib/contracts/upgradeability/BaseUpgradeabilityProxy.sol\":{\"keccak256\":\"0xc4bbf786e15395b2840d90edfa5599a2246d8b9e35786cbd012833989ba94353\",\"urls\":[\"bzzr://d68cdcc0963ce59b389c596c8567c483aa5cbda4a2570c3e2d0e243c275fd22a\"]},\"zos-lib/contracts/upgradeability/Proxy.sol\":{\"keccak256\":\"0xd8074ae5fa7ee6384ca8196a896612fb044bbf4ff4b7336d03cd97845000ac21\",\"urls\":[\"bzzr://a94275c7d409e80fa5cf6f31c8a6b97cf85c231de40585d42ae98bab426562c6\"]},\"zos-lib/contracts/upgradeability/UpgradeabilityProxy.sol\":{\"keccak256\":\"0x3ba28ba575772b5d4afb895eeabcdf344531cd877a0ef5220785a605b16dc372\",\"urls\":[\"bzzr://18ce3ff3fbd9b7bb87ac5aad733ec2212c5ad0df3510d47ace8e140f9f11a55f\"]},\"zos-lib/contracts/utils/Address.sol\":{\"keccak256\":\"0x4296cea43a884099c0d3f532883e8d3997fa07b559131fc5c4ae656a5da3df24\",\"urls\":[\"bzzr://665980fa12b3d42e0ad7dddd92c976da2763d7b08b4043e16a6413d8190ffed6\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610e4d806100206000396000f3fe60806040526004361061008e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631892970b1461009357806318e4ac35146100e457806335a6861a14610149578063419b96fa146101ae578063bb4a7f18146101ff578063c4d66de81461026b578063f1115024146102bc578063f3cb4aae14610317575b600080fd5b34801561009f57600080fd5b506100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610368565b005b3480156100f057600080fd5b506101336004803603602081101561010757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610374565b6040518082815260200191505060405180910390f35b34801561015557600080fd5b506101986004803603602081101561016c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610482565b6040518082815260200191505060405180910390f35b3480156101ba57600080fd5b506101fd600480360360208110156101d157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610590565b005b34801561020b57600080fd5b50610214610867565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561025757808201518184015260208101905061023c565b505050509050019250505060405180910390f35b34801561027757600080fd5b506102ba6004803603602081101561028e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506109ba565b005b3480156102c857600080fd5b50610315600480360360408110156102df57600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610b40565b005b34801561032357600080fd5b506103666004803603602081101561033a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610cb3565b005b610371816109ba565b50565b6000603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561043b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b603560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610549576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b603460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610655576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b6000603560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506000600102603460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555060008090505b603380549050811015610863578173ffffffffffffffffffffffffffffffffffffffff1660338281548110151561071b57fe5b9060005260206000200160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561085657603360016033805490500381548110151561077957fe5b9060005260206000200160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166033828154811015156107b357fe5b9060005260206000200160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603360016033805490500381548110151561081257fe5b9060005260206000200160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905560338054809190600190036108549190610dd0565b505b80806001019150506106e8565b5050565b6060603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561092e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b60338054806020026020016040519081016040528092919081815260200182805480156109b057602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019060010190808311610966575b5050505050905090565b600060019054906101000a900460ff16806109d957506109d8610dbf565b5b806109f057506000809054906101000a900460ff16155b1515610a8a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602e8152602001807f436f6e747261637420696e7374616e63652068617320616c726561647920626581526020017f656e20696e697469616c697a656400000000000000000000000000000000000081525060400191505060405180910390fd5b60008060019054906101000a900460ff161590508015610ada576001600060016101000a81548160ff02191690831515021790555060016000806101000a81548160ff0219169083151502179055505b81603660006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508015610b3c5760008060016101000a81548160ff0219169083151502179055505b5050565b603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c05576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b81603460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555060338190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505050565b603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610d78576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b42603560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555050565b600080303b90506000811491505090565b815481835581811115610df757818360005260206000209182019101610df69190610dfc565b5b505050565b610e1e91905b80821115610e1a576000816000905550600101610e02565b5090565b9056fea165627a7a72305820cefb3b0ca78f3c06563eae0039a6a490796810f27ad4619629c192ea7ee8e5060029",
+  "deployedBytecode": "0x60806040526004361061008e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631892970b1461009357806318e4ac35146100e457806335a6861a14610149578063419b96fa146101ae578063bb4a7f18146101ff578063c4d66de81461026b578063f1115024146102bc578063f3cb4aae14610317575b600080fd5b34801561009f57600080fd5b506100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610368565b005b3480156100f057600080fd5b506101336004803603602081101561010757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610374565b6040518082815260200191505060405180910390f35b34801561015557600080fd5b506101986004803603602081101561016c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610482565b6040518082815260200191505060405180910390f35b3480156101ba57600080fd5b506101fd600480360360208110156101d157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610590565b005b34801561020b57600080fd5b50610214610867565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b8381101561025757808201518184015260208101905061023c565b505050509050019250505060405180910390f35b34801561027757600080fd5b506102ba6004803603602081101561028e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506109ba565b005b3480156102c857600080fd5b50610315600480360360408110156102df57600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610b40565b005b34801561032357600080fd5b506103666004803603602081101561033a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610cb3565b005b610371816109ba565b50565b6000603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561043b576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b603560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610549576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b603460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610655576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b6000603560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055506000600102603460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555060008090505b603380549050811015610863578173ffffffffffffffffffffffffffffffffffffffff1660338281548110151561071b57fe5b9060005260206000200160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16141561085657603360016033805490500381548110151561077957fe5b9060005260206000200160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166033828154811015156107b357fe5b9060005260206000200160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603360016033805490500381548110151561081257fe5b9060005260206000200160006101000a81549073ffffffffffffffffffffffffffffffffffffffff021916905560338054809190600190036108549190610dd0565b505b80806001019150506106e8565b5050565b6060603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561092e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b60338054806020026020016040519081016040528092919081815260200182805480156109b057602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019060010190808311610966575b5050505050905090565b600060019054906101000a900460ff16806109d957506109d8610dbf565b5b806109f057506000809054906101000a900460ff16155b1515610a8a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602e8152602001807f436f6e747261637420696e7374616e63652068617320616c726561647920626581526020017f656e20696e697469616c697a656400000000000000000000000000000000000081525060400191505060405180910390fd5b60008060019054906101000a900460ff161590508015610ada576001600060016101000a81548160ff02191690831515021790555060016000806101000a81548160ff0219169083151502179055505b81603660006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508015610b3c5760008060016101000a81548160ff0219169083151502179055505b5050565b603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610c05576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b81603460008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555060338190806001815401808255809150509060018203906000526020600020016000909192909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550505050565b603660009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610d78576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260108152602001807f4f6e6c7920757365724d616e616765720000000000000000000000000000000081525060200191505060405180910390fd5b42603560008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555050565b600080303b90506000811491505090565b815481835581811115610df757818360005260206000209182019101610df69190610dfc565b5b505050565b610e1e91905b80821115610e1a576000816000905550600101610e02565b5090565b9056fea165627a7a72305820cefb3b0ca78f3c06563eae0039a6a490796810f27ad4619629c192ea7ee8e5060029",
+  "sourceMap": "85:160:10:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;85:160:10;;;;;;;",
+  "deployedSourceMap": "85:160:10:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;135:108;;8:9:-1;5:2;;;30:1;27;20:12;5:2;135:108:10;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;135:108:10;;;;;;;;;;;;;;;;;;;;;;2021:149:1;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2021:149:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2021:149:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1500:121;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1500:121:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1500:121:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2576:580;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2576:580:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2576:580:1;;;;;;;;;;;;;;;;;;;;;;1730:134;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1730:134:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;1730:134:1;;;;;;;;;;;;;;;;;599:117;;8:9:-1;5:2;;;30:1;27;20:12;5:2;599:117:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;599:117:1;;;;;;;;;;;;;;;;;;;;;;1169:177;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1169:177:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1169:177:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2309:130;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2309:130:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2309:130:1;;;;;;;;;;;;;;;;;;;;;;135:108:10;198:38;223:12;198:24;:38::i;:::-;135:108;:::o;2021:149:1:-;2102:7;900:11;;;;;;;;;;;878:34;;:10;:34;;;870:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2128:19;:35;2148:14;2128:35;;;;;;;;;;;;;;;;2121:42;;2021:149;;;:::o;1500:121::-;1566:7;900:11;;;;;;;;;;;878:34;;:10;:34;;;870:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1593:14;:21;1608:5;1593:21;;;;;;;;;;;;;;;;1586:28;;1500:121;;;:::o;2576:580::-;900:11;;;;;;;;;;;878:34;;:10;:34;;;870:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2695:1;2657:19;:35;2677:14;2657:35;;;;;;;;;;;;;;;:39;;;;2739:3;2706:36;;:14;:30;2721:14;2706:30;;;;;;;;;;;;;;;:36;;;;2757:9;2769:1;2757:13;;2752:398;2776:24;:31;;;;2772:1;:35;2752:398;;;2863:14;2832:45;;:24;2857:1;2832:27;;;;;;;;;;;;;;;;;;;;;;;;;;;:45;;;2828:312;;;2927:24;2986:1;2952:24;:31;;;;:35;2927:61;;;;;;;;;;;;;;;;;;;;;;;;;;;2897:24;2922:1;2897:27;;;;;;;;;;;;;;;;;;:91;;;;;;;;;;;;;;;;;;3013:24;3072:1;3038:24;:31;;;;:35;3013:61;;;;;;;;;;;;;;;;;;3006:68;;;;;;;;;;;3092:24;:33;;;;;;;;;;;;:::i;:::-;;2828:312;2809:3;;;;;;;2752:398;;;;2576:580;:::o;1730:134::-;1798:16;900:11;;;;;;;;;;;878:34;;:10;:34;;;870:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1833:24;1826:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1730:134;:::o;599:117::-;1024:12:25;;;;;;;;;;;:31;;;;1040:15;:13;:15::i;:::-;1024:31;:47;;;;1060:11;;;;;;;;;;;1059:12;1024:47;1016:106;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1129:19;1152:12;;;;;;;;;;;1151:13;1129:35;;1174:14;1170:80;;;1213:4;1198:12;;:19;;;;;;;;;;;;;;;;;;1239:4;1225:11;;:18;;;;;;;;;;;;;;;;;;1170:80;696:12:1;670:11;;:39;;;;;;;;;;;;;;;;;;1268:14:25;1264:55;;;1307:5;1292:12;;:20;;;;;;;;;;;;;;;;;;1264:55;599:117:1;;:::o;1169:177::-;900:11;;;;;;;;;;;878:34;;:10;:34;;;870:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1288:5;1264:14;:21;1279:5;1264:21;;;;;;;;;;;;;;;:29;;;;1303:24;1333:5;1303:36;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1303:36:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1169:177;;:::o;2309:130::-;900:11;;;;;;;;;;;878:34;;:10;:34;;;870:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2429:3;2391:19;:35;2411:14;2391:35;;;;;;;;;;;;;;;:41;;;;2309:130;:::o;1409:467:25:-;1456:4;1797:10;1842:7;1830:20;1824:26;;1870:1;1864:2;:7;1857:14;;;1409:467;:::o;85:160:10:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"./../BusinessOwner.sol\";\n\n/// @title Business Owner\ncontract BusinessOwnerMock is BusinessOwner {\n    function initializeMock(address _userManager) public {\n        BusinessOwner.initialize(_userManager);\n    }\n}\n",
+  "sourcePath": "/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/mocks/BusinessOwnerMock.sol",
+  "ast": {
+    "absolutePath": "/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/mocks/BusinessOwnerMock.sol",
+    "exportedSymbols": {
+      "BusinessOwnerMock": [
+        5302
+      ]
+    },
+    "id": 5303,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5286,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "absolutePath": "/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/BusinessOwner.sol",
+        "file": "./../BusinessOwner.sol",
+        "id": 5287,
+        "nodeType": "ImportDirective",
+        "scope": 5303,
+        "sourceUnit": 1897,
+        "src": "25:32:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5288,
+              "name": "BusinessOwner",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1896,
+              "src": "115:13:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BusinessOwner_$1896",
+                "typeString": "contract BusinessOwner"
+              }
+            },
+            "id": 5289,
+            "nodeType": "InheritanceSpecifier",
+            "src": "115:13:10"
+          }
+        ],
+        "contractDependencies": [
+          1896,
+          6727
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Business Owner",
+        "fullyImplemented": true,
+        "id": 5302,
+        "linearizedBaseContracts": [
+          5302,
+          1896,
+          6727
+        ],
+        "name": "BusinessOwnerMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 5300,
+              "nodeType": "Block",
+              "src": "188:55:10",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5297,
+                        "name": "_userManager",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5291,
+                        "src": "223:12:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5294,
+                        "name": "BusinessOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1896,
+                        "src": "198:13:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_BusinessOwner_$1896_$",
+                          "typeString": "type(contract BusinessOwner)"
+                        }
+                      },
+                      "id": 5296,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1742,
+                      "src": "198:24:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 5298,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "198:38:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5299,
+                  "nodeType": "ExpressionStatement",
+                  "src": "198:38:10"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 5301,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initializeMock",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5292,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5291,
+                  "name": "_userManager",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5301,
+                  "src": "159:20:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5290,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "158:22:10"
+            },
+            "returnParameters": {
+              "id": 5293,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "188:0:10"
+            },
+            "scope": 5302,
+            "src": "135:108:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5303,
+        "src": "85:160:10"
+      }
+    ],
+    "src": "0:246:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/mocks/BusinessOwnerMock.sol",
+    "exportedSymbols": {
+      "BusinessOwnerMock": [
+        5302
+      ]
+    },
+    "id": 5303,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5286,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "absolutePath": "/home/nicolabba/WebstormProjects/The-Walking-Bug/Soldino/contracts/BusinessOwner.sol",
+        "file": "./../BusinessOwner.sol",
+        "id": 5287,
+        "nodeType": "ImportDirective",
+        "scope": 5303,
+        "sourceUnit": 1897,
+        "src": "25:32:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5288,
+              "name": "BusinessOwner",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1896,
+              "src": "115:13:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BusinessOwner_$1896",
+                "typeString": "contract BusinessOwner"
+              }
+            },
+            "id": 5289,
+            "nodeType": "InheritanceSpecifier",
+            "src": "115:13:10"
+          }
+        ],
+        "contractDependencies": [
+          1896,
+          6727
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Business Owner",
+        "fullyImplemented": true,
+        "id": 5302,
+        "linearizedBaseContracts": [
+          5302,
+          1896,
+          6727
+        ],
+        "name": "BusinessOwnerMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 5300,
+              "nodeType": "Block",
+              "src": "188:55:10",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5297,
+                        "name": "_userManager",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5291,
+                        "src": "223:12:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5294,
+                        "name": "BusinessOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1896,
+                        "src": "198:13:10",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_BusinessOwner_$1896_$",
+                          "typeString": "type(contract BusinessOwner)"
+                        }
+                      },
+                      "id": 5296,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1742,
+                      "src": "198:24:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 5298,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "198:38:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5299,
+                  "nodeType": "ExpressionStatement",
+                  "src": "198:38:10"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 5301,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initializeMock",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5292,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5291,
+                  "name": "_userManager",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5301,
+                  "src": "159:20:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5290,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "159:7:10",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "158:22:10"
+            },
+            "returnParameters": {
+              "id": 5293,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "188:0:10"
+            },
+            "scope": 5302,
+            "src": "135:108:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 5303,
+        "src": "85:160:10"
+      }
+    ],
+    "src": "0:246:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.6",
+  "updatedAt": "2019-05-16T08:07:59.682Z",
+  "devdoc": {
+    "methods": {
+      "confirmBusiness(address)": {
+        "details": "Confirms the given business owner",
+        "params": {
+          "_businessOwner": "The address of the business owner to confirm"
+        }
+      },
+      "getAllBusinessOwners()": {
+        "details": "Returns a dynamic array containing all registered business owners' addresses"
+      },
+      "initialize(address)": {
+        "details": "Initializes the contract saving the instances of the proxies of the contracts used by this contract",
+        "params": {
+          "_userManager": "The instance of the proxy of the UserManager contract of this project"
+        }
+      },
+      "isConfirmed(address)": {
+        "details": "Returns true if the given business owner is confirmed",
+        "params": {
+          "_businessOwner": "The address of the business owner to check"
+        }
+      },
+      "login(address)": {
+        "details": "Returns the hash of the data of a specific user",
+        "params": {
+          "_user": "The address of the business owner whose data to return"
+        }
+      },
+      "registerBusinessOwner(bytes32,address)": {
+        "details": "Registers the given user as a business owner",
+        "params": {
+          "_hash": "the hash of the data of the citizen present in ipfs",
+          "_user": "the address of the business owner to be registered"
+        }
+      },
+      "removeBusiness(address)": {
+        "details": "Removes the given business owner",
+        "params": {
+          "_businessOwner": "The address of the business owner to remove"
+        }
+      }
+    },
+    "title": "Business Owner"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

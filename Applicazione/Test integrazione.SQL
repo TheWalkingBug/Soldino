@@ -1,0 +1,17 @@
+INSERT INTO `Test`(`Descrizione`, `Stato`, `Tipologia`) VALUES
+("Verifica che quando vengono pagate le tasse da parte di un possessore di partita IVA venga registrata correttamente la transazione","Successo","I"),
+("Verifica che quando vengono pagate le tasse da parte del governo di partita IVA venga registrata correttamente la transazione","Successo","I"),
+("Verifica che se le tasse a credito o debito del trimestre corrente sono già state pagate allora e si prova a ri-eseguire il pagamento viene visualizzato un messaggio di errore","N.I.","I"),
+("Verifica che se un possessore di partita IVA prova a pagare le tasse del trimestre corrente ma deve ricevere un rimborso o non ha tasse da pagare venga visualizzato un errore","N.I.","I"),
+("Verifica che se il governo prova a dare un rimborso IVA ad un possessore di partita IVA ma questo ha il consuntivo del trimestre corrente a debito venga visualizzato un errore","N.I.","I"),
+("Verifica che quando un cittadino viene registrato correttamente i suoi dati siano correttamente memorizzati su IPFS e sulla BlockChain","Successo","I"),
+("Verifica che se un utente già registrato prova ad iscriversi come cittadino venga visualizzato un messaggio d''errore","N.I.","I"),
+("Verifica che quando un possessore di partita IVA viene registrato correttamente i suoi dati siano correttamente memorizzati su IPFS e sulla BlockChain","Successo","I"),
+("Verifica che se un utente già registrato prova ad iscriversi come possessore di partita IVA venga visualizzato un messaggio d''errore","N.I.","I"),
+("Verifica che il calcolo delle tasse da pagare o ricevere ritorni il valore corretto","Successo","I"),
+("Verifica che quando un prodotto viene aggiunto correttamente i suoi dati siano correttamente memorizzati su IPFS e sulla BlockChain","N.I.","I"),
+("Verifica che quando un prodotto viene rimosso o modificato non vengano cambiati i dati delle ricevute che vi fanno riferimento","Successo","I"),
+("Verifica che l''acquisto di prodotti memorizzi le giuste transazioni","N.I.","I"),
+("Verifica che, al deploy dei contratti, venga registrato come governo l''account corretto","Successo","I"),
+("Verifica che quando il governo distribuisce Cubit vengano cambiati i bilanci degli utenti a cui vengono distribuiti i Cubit","Successo","I"),
+("Verifica che quando viene effettuato l''upgrade dei contratti non cambi l''indirizzo attraverso il quale vi si può accedere","N.I.","I")

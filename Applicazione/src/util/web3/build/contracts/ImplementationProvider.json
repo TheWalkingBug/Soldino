@@ -1,0 +1,300 @@
+{
+  "contractName": "ImplementationProvider",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "contractName",
+          "type": "string"
+        }
+      ],
+      "name": "getImplementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\n\n/**\n * @title ImplementationProvider\n * @dev Interface for providing implementation addresses for other contracts by name.\n */\ncontract ImplementationProvider {\n  /**\n   * @dev Abstract function to return the implementation address of a contract.\n   * @param contractName Name of the contract.\n   * @return Implementation address of the contract.\n   */\n  function getImplementation(string memory contractName) public view returns (address);\n}\n\n",
+  "sourcePath": "zos-lib/contracts/application/ImplementationProvider.sol",
+  "ast": {
+    "absolutePath": "zos-lib/contracts/application/ImplementationProvider.sol",
+    "exportedSymbols": {
+      "ImplementationProvider": [
+        6994
+      ]
+    },
+    "id": 6995,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6986,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title ImplementationProvider\n@dev Interface for providing implementation addresses for other contracts by name.",
+        "fullyImplemented": false,
+        "id": 6994,
+        "linearizedBaseContracts": [
+          6994
+        ],
+        "name": "ImplementationProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Abstract function to return the implementation address of a contract.\n@param contractName Name of the contract.\n@return Implementation address of the contract.",
+            "id": 6993,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getImplementation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6989,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6988,
+                  "name": "contractName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6993,
+                  "src": "407:26:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 6987,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "407:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "406:28:27"
+            },
+            "returnParameters": {
+              "id": 6992,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6991,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6993,
+                  "src": "456:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6990,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "456:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "455:9:27"
+            },
+            "scope": 6994,
+            "src": "380:85:27",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6995,
+        "src": "152:315:27"
+      }
+    ],
+    "src": "0:469:27"
+  },
+  "legacyAST": {
+    "absolutePath": "zos-lib/contracts/application/ImplementationProvider.sol",
+    "exportedSymbols": {
+      "ImplementationProvider": [
+        6994
+      ]
+    },
+    "id": 6995,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 6986,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:27"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title ImplementationProvider\n@dev Interface for providing implementation addresses for other contracts by name.",
+        "fullyImplemented": false,
+        "id": 6994,
+        "linearizedBaseContracts": [
+          6994
+        ],
+        "name": "ImplementationProvider",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Abstract function to return the implementation address of a contract.\n@param contractName Name of the contract.\n@return Implementation address of the contract.",
+            "id": 6993,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getImplementation",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6989,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6988,
+                  "name": "contractName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6993,
+                  "src": "407:26:27",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 6987,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "407:6:27",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "406:28:27"
+            },
+            "returnParameters": {
+              "id": 6992,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6991,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6993,
+                  "src": "456:7:27",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6990,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "456:7:27",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "455:9:27"
+            },
+            "scope": 6994,
+            "src": "380:85:27",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6995,
+        "src": "152:315:27"
+      }
+    ],
+    "src": "0:469:27"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.6",
+  "updatedAt": "2019-05-16T08:07:59.751Z",
+  "devdoc": {
+    "details": "Interface for providing implementation addresses for other contracts by name.",
+    "methods": {
+      "getImplementation(string)": {
+        "details": "Abstract function to return the implementation address of a contract.",
+        "params": {
+          "contractName": "Name of the contract."
+        },
+        "return": "Implementation address of the contract."
+      }
+    },
+    "title": "ImplementationProvider"
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
